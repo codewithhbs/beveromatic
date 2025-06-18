@@ -122,19 +122,19 @@ export default function Home() {
 
   const videos = [
     {
-      url: "/video/v1.mp4",
+      url: "https://cloud.hoverbusinessservices.com/beveromatic/v1.mp4",
       title: "City Traffic"
     },
     {
-      url: "/video/v2.mp4",
+      url: "https://cloud.hoverbusinessservices.com/beveromatic/v2.mp4",
       title: "Ocean Waves"
     },
     {
-      url: "/video/v3.mp4",
+      url: "https://cloud.hoverbusinessservices.com/beveromatic/v3.mp4",
       title: "Forest Stream"
     },
     {
-      url: "/video/v4.mp4",
+      url: "https://cloud.hoverbusinessservices.com/beveromatic/v4.mp4",
       title: "Space Stars"
     }
   ]
