@@ -1,5 +1,16 @@
-MAIL_HOST = smtp.gmail.com
+MAIL_HOST=smtp.gmail.com
 MAIL_PORT=587
 MAIL_USERNAME=sales@.com
-MAIL_PASSWORD=xqjd
-ONER_MAIL=sales@.com
+MAIL_PASSWORD=
+OWNER_EMAIL=sales@.com
+
+NEXTAUTH_SECRET=+gLOzUHKZYPsr2z5uvTIQbH4=
+MONGODB_URI=mongodb+srv://:@cluster0.9xzq7ln.mongodb.net/beveromatic?retryWrites=true&w=majority&appName=Cluster0
+
+
+NEXT_PUBLIC_SITE_URL=http://localhost:3000/
+
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
+
