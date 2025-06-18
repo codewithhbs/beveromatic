@@ -11,7 +11,7 @@ export default function ViewBlogPage() {
   const params = useParams();
   const [blog, setBlog] = useState(null);
   const [loading, setLoading] = useState(true);
-
+  // install 
   useEffect(() => {
     const fetchBlog = async () => {
       try {
@@ -73,9 +73,8 @@ export default function ViewBlogPage() {
         {/* Title and Status */}
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold">{blog.title}</h2>
-          <span className={`px-3 py-1 text-sm rounded-full ${
-            blog.status === "published" ? "bg-green-100 text-green-800" : "bg-gray-200 text-gray-800"
-          }`}>
+          <span className={`px-3 py-1 text-sm rounded-full ${blog.status === "published" ? "bg-green-100 text-green-800" : "bg-gray-200 text-gray-800"
+            }`}>
             {blog.status === "published" ? "Published" : "Draft"}
           </span>
         </div>
