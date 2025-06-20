@@ -1,3 +1,4 @@
+"use server"
 import axios from "axios";
 import BlogPostPageClient from "./BlogPostPageClient";
 
@@ -27,5 +28,5 @@ export async function generateMetadata({ params }) {
 
 export default async function BlogDetailPage({ params }) {
   const param = await params;
-  return <BlogPostPageClient slug={param.slug} />;
+  return <BlogPostPageClient  />;
 }

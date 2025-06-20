@@ -7,9 +7,9 @@ import { useParams } from "next/navigation";
 import axios from "axios";
 import Link from "next/link";
 
-const BlogPostPage = ({ slug }) => {
+const BlogPostPage = () => {
 
-  //   const params = useParams();
+  const { slug } = useParams();
   const [blog, setBlog] = useState([]);
   const [categories, setCategories] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -55,24 +55,6 @@ const BlogPostPage = ({ slug }) => {
       </div>
     );
   }
-
-  // const recentPosts = [
-  //   {
-  //     title: "The Definitive Guide To Supply Chain Management",
-  //     date: "Mar 15, 2024",
-  //     image: "/api/placeholder/80/60",
-  //   },
-  //   {
-  //     title: "Key Industry Trends That Will Shape 2024",
-  //     date: "Mar 12, 2024",
-  //     image: "/api/placeholder/80/60",
-  //   },
-  //   {
-  //     title: "Digital Transformation Best Practices",
-  //     date: "Mar 10, 2024",
-  //     image: "/api/placeholder/80/60",
-  //   },
-  // ];
 
   const tags = [
     "BV02P",
