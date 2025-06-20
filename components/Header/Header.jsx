@@ -161,9 +161,9 @@ function App() {
                             <Link href="/services" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Services
                             </Link>
-                            <Link href="/blogs" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
+                            {/* <Link href="/blogs" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Blogs
-                            </Link>
+                            </Link> */}
                             <Link href="/contact" className="text-black font-semibold opacity-80 hover:text-[#f26522] transition-opacity">
                                 Contact
                             </Link>
