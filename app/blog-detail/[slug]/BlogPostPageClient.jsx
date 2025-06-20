@@ -8,7 +8,7 @@ import axios from "axios";
 import Link from "next/link";
 
 const BlogPostPage = ({ slug }) => {
-   
+
   //   const params = useParams();
   const [blog, setBlog] = useState([]);
   const [categories, setCategories] = useState([]);
@@ -30,13 +30,15 @@ const BlogPostPage = ({ slug }) => {
           axios.get("/api/blogs-category"),
         ]);
 
-        setBlog(blogRes.data.blog);
-        setRecentPosts(blogRes.data.recentPosts);
-        setPreviousBlog(blogRes.data.previousBlog);
-        setNextBlog(blogRes.data.nextBlog);
+        const { blog, recentPosts, previousBlog, nextBlog } = blogRes.data;
+
+        setBlog(blog);
+        setRecentPosts(recentPosts);
+        setPreviousBlog(previousBlog);
+        setNextBlog(nextBlog);
         setCategories(catRes.data);
       } catch (error) {
-        console.error("Failed to fetch blog or categories:", error);
+        console.error("❌ Failed to fetch blog or categories:", error);
       } finally {
         setLoading(false);
       }
