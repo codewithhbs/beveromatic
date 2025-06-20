@@ -267,7 +267,7 @@ const BlogPostPage = ({ slug }) => {
             </div>
 
             {/* Tag Cloud */}
-            <div className="bg-white p-6 rounded-2xl shadow-sm">
+            {/* <div className="bg-white p-6 rounded-2xl shadow-sm">
               <h3 className="font-bold text-gray-900 mb-4">Products Tag</h3>
               <div className="flex flex-wrap gap-2">
                 {tags.map((tag, index) => (
@@ -279,7 +279,7 @@ const BlogPostPage = ({ slug }) => {
                   </span>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Contact Card */}
             <div className="bg-blue-900 text-white p-6 rounded-2xl">
