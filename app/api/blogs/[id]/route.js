@@ -5,17 +5,18 @@ import { isValidObjectId } from "mongoose";
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
+  const param = await params;
   try {
     await connectDB();
     let blog = null;
 
-    if (isValidObjectId(params.id)) {
-      blog = await Blog.findById(params.id).populate({
+    if (isValidObjectId(param.id)) {
+      blog = await Blog.findById(param.id).populate({
         path: "category",
         model: BlogCategory,
       });
     } else {
-      blog = await Blog.findOne({ slug: params.id }).populate({
+      blog = await Blog.findOne({ slug: param.id }).populate({
         path: "category",
         model: BlogCategory,
       });
@@ -51,6 +52,7 @@ export async function GET(request, { params }) {
   }
 }
 export async function PUT(request, { params }) {
+  const param = await params;
   try {
     await connectDB();
 
@@ -67,7 +69,7 @@ export async function PUT(request, { params }) {
     }
 
     // Fetch existing blog
-    const existingBlog = await Blog.findById(params.id);
+    const existingBlog = await Blog.findById(param.id);
     if (!existingBlog) {
       return NextResponse.json({ error: "Blog not found" }, { status: 404 });
     }
@@ -112,9 +114,10 @@ export async function PUT(request, { params }) {
 }
 
 export async function DELETE(request, { params }) {
+  const param = await params;
   try {
     await connectDB();
-    const blog = await Blog.findByIdAndDelete(params.id);
+    const blog = await Blog.findByIdAndDelete(param.id);
 
     if (!blog) {
       return NextResponse.json({ error: "Blog not found" }, { status: 404 });

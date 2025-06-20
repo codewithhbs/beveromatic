@@ -2,8 +2,9 @@ import axios from "axios";
 import BlogPostPageClient from "./BlogPostPageClient";
 
 export async function generateMetadata({ params }) {
+  const param = await params;
   const res = await axios.get(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${params.slug}`
+    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${param.slug}`
   );
 
   const data = res.data;
@@ -24,6 +25,7 @@ export async function generateMetadata({ params }) {
   };
 }
 
-export default function BlogDetailPage({ params }) {
-  return <BlogPostPageClient slug={params.slug} />;
+export default async function BlogDetailPage({ params }) {
+  const param = await params;
+  return <BlogPostPageClient slug={param.slug} />;
 }
