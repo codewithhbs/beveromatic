@@ -1,14 +1,17 @@
-
-import axios from "axios";
 import BlogPostPageClient from "./BlogPostPageClient";
-
 export async function generateMetadata({ params }) {
-  const param = await params;
-  const res = await axios.get(
-    `${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${param.slug}`
-  );
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SITE_URL}/api/blogs/${params.slug}`, {
+    cache: 'no-store',
+  });
 
-  const data = res.data;
+  if (!res.ok) {
+    return {
+      title: "Blog Not Found",
+      description: "The requested blog could not be found.",
+    };
+  }
+
+  const data = await res.json();
   const post = data.blog;
 
   return {
@@ -27,6 +30,5 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function BlogDetailPage({ params }) {
-  const param = await params;
-  return <BlogPostPageClient  />;
+  return <BlogPostPageClient slug={params.slug} />;
 }

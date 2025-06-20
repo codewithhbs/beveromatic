@@ -1,4 +1,4 @@
-"use server";
+"use client";
 import React, { useEffect, useState } from "react";
 import { Search, Calendar, User, Phone, Mail } from "lucide-react";
 import Image from "next/image";
@@ -47,7 +47,7 @@ const BlogPostPage = () => {
     fetchBlog();
   }, [slug]);
 
-  console.log(previousBlog);
+ 
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
