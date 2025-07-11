@@ -6,7 +6,7 @@ import Link from 'next/link'
 function services() {
   return (
     <>
-      <section className="w-full py-20 bg-[#fff2eb]">
+      <section className="w-full py-20 bg-[#fff2eb] hidden">
         <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-5 flex flex-col items-center">
           <h2 className=" text-center text-3xl md:text-5xl font-bold text-black mb-4">Vending Machine <span className="text-[#AC4C2D]">Services</span></h2>
           <div className="flex flex-wrap justify-center w-full">

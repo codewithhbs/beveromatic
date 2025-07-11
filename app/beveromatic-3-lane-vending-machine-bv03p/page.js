@@ -2,8 +2,8 @@ import Beveromatic3LaneVending from '@/components/Beveromatic3LaneVending/Bevero
 import React from 'react'
 
 export const metadata = {
-  title: "Beveromatic BV03P – Fully Automatic Coffee Dispenser",
-  description:"BV03P delivers barista-style coffee instantly. Fully automatic, user-friendly interface and customizable drink options for modern workplaces.",
+  title: "BV03P Multi Beverage Vending System – 3 Lane | Beveromatic",
+  description:"Upgrade your space with the BV03P – a fully automatic coffee dispenser offering barista-style drinks, 3-lane options & easy operation. Order yours today!",
 };
 
 const Page = () => {

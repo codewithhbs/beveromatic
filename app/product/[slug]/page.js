@@ -1,14 +1,13 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
-import { ArrowLeft, PenTool as Tool } from 'lucide-react'
-import Link from 'next/link'
+import React, {  useEffect, useState } from 'react'
 import ProductDetail from '@/components/ProductDetail/ProductDetail'
-const Page = ({ params }) => {
+import { notFound, useParams } from 'next/navigation'
+const Page = () => {
     // const router = useRouter();
     // const resolvedParams = React.use(params);
     // const { slug } = params;
-    const { slug } = params;
+    const { slug } = useParams();
     const [product, setProduct] = useState(null);
     useEffect(() => {
         if (typeof window !== "undefined") {
@@ -320,17 +319,7 @@ const Page = ({ params }) => {
       };
 
     if (!product) {
-        return (
-            <div className="min-h-screen bg-[#190F0D] text-white flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-3xl font-bold mb-4">Product not found</h1>
-                    <Link href="/" className="text-[#AD4E26] inline-flex items-center gap-2">
-                        <ArrowLeft size={20} />
-                        Back to Products
-                    </Link>
-                </div>
-            </div>
-        )
+        return notFound();
     }
 
     return (

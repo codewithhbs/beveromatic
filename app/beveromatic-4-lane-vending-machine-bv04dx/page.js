@@ -2,8 +2,8 @@ import Beveromatic4LaneVendingBv04dx from '@/components/Beveromatic4LaneVendingB
 import React from 'react'
 
 export const metadata = {
-  title: "Beveromatic BV04DX – Instant Tea & Coffee Vending Machine",
-  description:"The BV04DX dispenses instant tea, coffee & soups with speed. Compact, easy to operate and ideal for high-traffic office or retail environments.",
+  title: "BV04DX Multi Beverage Vending Machine – 4 Lane | Beveromatic",
+  description:"Get the BV04DX vending machine for instant tea, coffee & soups. Compact, fast & user-friendly. Buy now for reliable multi-beverage dispensing anywhere!",
 };
 
 

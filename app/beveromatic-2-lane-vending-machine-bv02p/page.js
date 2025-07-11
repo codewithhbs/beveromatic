@@ -2,8 +2,8 @@ import Beveromatic2Lane from '@/components/Beveromatic2Lane/Beveromatic2Lane'
 import React from 'react'
 
 export const metadata = {
-  title: "Beveromatic BV02P – Compact Hot Beverage Vending Machine",
-  description:"Enjoy quick, delicious coffee and tea with the compact BV02P. Ideal for small offices, offering speed, ease, and consistent flavor in every cup.",
+  title: "BV02P Multi Beverage Vending Machine | Buy from Beveromatic",
+  description:"Get fast, flavorful tea & coffee with the compact BV02P 2-lane vending machine. Perfect for any space. Order now from Beveromatic for easy, hot beverages!",
 };
 
 const Page = () => {

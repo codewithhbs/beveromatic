@@ -3,8 +3,8 @@ import Beveromatic2LaneBv02dx from '@/components/Beveromatic2LaneBv0dx/Beveromat
 import React from 'react'
 
 export const metadata = {
-  title: "Beveromatic BV02DX – Dual Option Coffee Vending Machine",
-  description:"Serve two beverage types at once with BV02DX. Perfect for mid-sized spaces, offering premium taste, energy efficiency, and sleek design.",
+  title: "BV02DX Dual Coffee Vending Machine | Buy 2-Lane System Today",
+  description:"Serve 2 beverages with BV02DX—sleek, energy-efficient & ideal for mid-sized spaces. Enjoy premium taste in every cup. Order your vending machine now!",
 };
 
 

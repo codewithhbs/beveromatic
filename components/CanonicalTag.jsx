@@ -1,25 +1,11 @@
-// components/CanonicalTag.jsx
-"use client";
+'use client';
+import { usePathname } from 'next/navigation';
 
-import { usePathname } from "next/navigation";
-import { useEffect } from "react";
-
-const CanonicalTag = () => {
+export default function CanonicalTag({ baseUrl }) {
   const pathname = usePathname();
+  const canonicalUrl = `${baseUrl}${pathname === '/' ? '' : pathname}`;
 
-  useEffect(() => {
-    const canonicalUrl = `${window.location.origin}${pathname}`;
-
-    let link = document.querySelector("link[rel='canonical']");
-    if (!link) {
-      link = document.createElement("link");
-      link.setAttribute("rel", "canonical");
-      document.head.appendChild(link);
-    }
-    link.setAttribute("href", canonicalUrl);
-  }, [pathname]);
-
-  return null;
-};
-
-export default CanonicalTag;
+  return (
+    <link rel="canonical" href={canonicalUrl} />
+  );
+}

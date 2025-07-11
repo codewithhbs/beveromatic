@@ -183,7 +183,6 @@ export default function Home() {
             </Slider>
           </div>
         </section>
-
         <section className="w-full py-10 md:py-20 bg-[url('/bg/bg-1.webp')] bg-cover bg-center">
           <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-10">
             {/* end of Hero Section */}
@@ -224,7 +223,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="min-h-screen bg-[#fff2eb] bg-[url('/bg/bg1.jpg')] bg-blend-multiply bg-right bg-no-repeat">
+        <section className="min-h-screen bg-[#fff2eb] bg-[url('/bg/bg1.jpg')] bg-blend-multiply bg-right bg-no-repeat">
           <section className="w-full py-24">
             <div className="max-w-7xl px-6 sm:px-6 lg:px-10 mx-auto">
               <div className="text-center mb-20">
@@ -286,7 +285,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
+        </section>
         {/* why choose us section */}
         <section className="w-full py-20 bg-white">
           <div className="max-w-7xl mx-auto px-3 sm:px-5 lg:px-5 flex flex-col items-center">
@@ -363,7 +362,7 @@ export default function Home() {
         {/* end of why choose section */}
 
         {/* services section */}
-        {/* <Services /> */}
+        <Services />
         {/* end of services section */}
 
         <section className="w-full py-20 bg-[#fff2eb] bg-[url('/bg/coffee-background-top-1.jpg')] bg-blend-multiply bg-center bg-cover">
