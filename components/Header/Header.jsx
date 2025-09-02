@@ -29,6 +29,10 @@ const products = [
             { name: 'BV04DX', linkURL: 'beveromatic-4-lane-vending-machine-bv04dx' }
         ],
     },
+     {
+        name: 'Manual Coffee Grinder',
+        linkURL: 'beveromatic-manual-coffee-grinder-BCCG63',
+    },
 ];
 
 function App() {
