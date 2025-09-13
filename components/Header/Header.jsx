@@ -38,27 +38,27 @@ const products = [
             { name: 'BVCG184', linkURL: 'beveromatic-manual-coffee-grinder-BVCG184' }
         ],
     },
-      {
-        name: 'Beveromatic Moka Pot',
-        linkURL: '',
-        subItems: [
-            { name: 'BVMP01', linkURL: 'beveromaticmokapot-bvmp01' }
-        ],
-    },
-      {
-        name: ' Milk Frother and Egg Beater',
-        linkURL: '',
-        subItems: [
-            { name: 'BVMFW', linkURL: 'beveromatic-milk-frother-egg-beater-bvmfw' }
-        ],
-    },
-      {
-        name: ' Rechargeable Electric Coffee Grinder',
-        linkURL: '',
-        subItems: [
-            { name: 'BVEG284', linkURL: 'beveromatic-rechargeable-electric-coffee-grinder-BVEG284' }
-        ],
-    },
+    //   {
+    //     name: 'Beveromatic Moka Pot',
+    //     linkURL: '',
+    //     subItems: [
+    //         { name: 'BVMP01', linkURL: 'beveromaticmokapot-bvmp01' }
+    //     ],
+    // },
+    //   {
+    //     name: ' Milk Frother and Egg Beater',
+    //     linkURL: '',
+    //     subItems: [
+    //         { name: 'BVMFW', linkURL: 'beveromatic-milk-frother-egg-beater-bvmfw' }
+    //     ],
+    // },
+    //   {
+    //     name: ' Rechargeable Electric Coffee Grinder',
+    //     linkURL: '',
+    //     subItems: [
+    //         { name: 'BVEG284', linkURL: 'beveromatic-rechargeable-electric-coffee-grinder-BVEG284' }
+    //     ],
+    // },
 ];
 
 function App() {
