@@ -29,15 +29,15 @@ const products = [
             { name: 'BV04DX', linkURL: 'beveromatic-4-lane-vending-machine-bv04dx' }
         ],
     },
-     {
-        name: 'Manual Coffee Grinder',
-        linkURL: '',
-         subItems: [
-            { name: 'BCCG63', linkURL: 'beveromatic-manual-coffee-grinder-BCCG63' },
-            { name: 'BVCG64', linkURL: 'beveromatic-manual-coffee-grinder-BVCG64' },
-            { name: 'BVCG184', linkURL: 'beveromatic-manual-coffee-grinder-BVCG184' }
-        ],
-    },
+    //  {
+    //     name: 'Manual Coffee Grinder',
+    //     linkURL: '',
+    //      subItems: [
+    //         { name: 'BCCG63', linkURL: 'beveromatic-manual-coffee-grinder-BCCG63' },
+    //         { name: 'BVCG64', linkURL: 'beveromatic-manual-coffee-grinder-BVCG64' },
+    //         { name: 'BVCG184', linkURL: 'beveromatic-manual-coffee-grinder-BVCG184' }
+    //     ],
+    // },
     //   {
     //     name: 'Beveromatic Moka Pot',
     //     linkURL: '',
