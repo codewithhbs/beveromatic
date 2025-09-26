@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { Search, Calendar, User, Phone, Mail } from "lucide-react";
 import Image from "next/image";
 const img1 = "/images/logistic_banner1.png";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 import axios from "axios";
 import Link from "next/link";
 
@@ -47,13 +47,17 @@ const BlogPostPage = () => {
     fetchBlog();
   }, [slug]);
 
- 
+
   if (loading) {
     return (
       <div className="flex items-center justify-center h-screen">
         <p>Loading...</p>
       </div>
     );
+  }
+
+  if (!blog || blog.length === 0) {
+    return notFound();
   }
 
   const tags = [

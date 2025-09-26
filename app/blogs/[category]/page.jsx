@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import axios from "axios";
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { notFound, useParams } from "next/navigation";
 
 const BlogCategoryPage = () => {
   const params = useParams();
@@ -31,7 +31,7 @@ const BlogCategoryPage = () => {
   const featuredArticle = blogs[0];
 
   if (!blogs || blogs.length === 0) {
-    return <div className="flex items-center justify-center h-screen">No blogs found</div>;
+    return notFound();
   }
   if (loading) {
     return (
